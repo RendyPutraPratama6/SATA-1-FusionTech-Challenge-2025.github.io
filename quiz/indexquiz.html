@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="style.css">
+   <title>Quiz</title>
+   <link rel="icon" href="../gambar/icon.jpg" type="image">
+</head>
+
+<body>
+   <!--=============== HEADER ===============-->
+   <header class="header" id="header">
+      <div class="header__container">
+         <a href="#" class="header__logo">
+            
+         </a>
+
+         <button class="header__toggle" id="header-toggle">
+            <i class="ri-menu-line"></i>
+         </button>
+
+         
+      </div>
+   </header>
+
+   <!--=============== SIDEBAR ===============-->
+   <nav class="sidebar" id="sidebar">
+      <div class="sidebar__container">
+         <div class="sidebar__user">
+            <div class="sidebar__img">
+               <img src="../gambar/profil.jpg" alt="image">
+            </div>
+
+            <div class="sidebar__info">
+               <h3>Guest </h3>
+               <span>Guest@email.com</span>
+            </div>
+         </div>
+         <div class="sidebar__content">
+            <div>
+               <h3 class="sidebar__title">MENU</h3>
+
+               <div class="sidebar__list">
+                  <a href="../beranda/index.html" class="sidebar__link active-link">
+                     <i class="ri-home-8-fill"></i>
+                     <span>Beranda</span>
+                  </a>
+
+                  <a href="../tentang/indexaboutt.html" class="sidebar__link">
+                     <i class="ri-global-fill"></i>
+                     <span>Tentang</span>
+                  </a>
+
+                  <a href="../kalender/indexkalender.html" class="sidebar__link">
+                     <i class="ri-calendar-fill"></i>
+                     <span>Kalender</span>
+                  </a>
+
+
+                  <a href="../jadwal imsak/jadwal imsak.html" class="sidebar__link">
+                     <i class="ri-time-line"></i>
+                     <span>Jadwal Imsak</span>
+                  </a>
+               
+               </div>
+            </div>
+
+
+         <div class="sidebar__actions">
+            <button>
+               <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
+                  <span>Tema</span>
+               </i>
+            </button>
+
+            <a href="../index.html">
+               <button class="sidebar__link">
+                  <i class="ri-logout-box-r-fill"></i>
+                  <span>Keluar</span>
+               </button>
+            </a>
+         </div>
+      </div>
+   </nav>
+
+   <!--=============== MAIN ===============-->
+   <main class="main container" id="main">
+    <header class="header-bg">
+        <div class="header-content">
+            <h1 class="judul">WEB RAMADHAN</h1>
+            <p>Ayo Semangat Ibadahnya</p>
+        </div>
+    </header>
+    <br>
+      <h1 class="hdr">Sidebar Menu</h1>
+      <div class="container-grid">
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../ibadah/sholat.html"><img src="../gambar/ibadah.jpg">Ibadah</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../doa puasa/indexdoa.html"><img src="../gambar/doa.png">Doa</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../motivasi/indexmotivasi.html"><img src="../gambar/motivasi.png">Motivasi</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../quiz/indexquiz.html"><img src="../gambar/quiz.jpg">Quiz</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../article/card.html"><img src="../gambar/jadwal imsak.png">blog</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../kisah nabi/kisahnabi.html"><img src="../gambar/cerita nabi.png">Cerita Nabi</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="quiz-section">
+         <h2 class="hdr">Quiz Ramadan</h2>
+         <form id="quiz-form" onsubmit="submitQuiz(event)">
+            <div class="quiz-grid">
+               <div class="card-grid-main">
+                  <div class="quiz-question">
+                     <p>1 Apa yang dimaksud dengan Ramadan?</p>
+                     <input type="radio" name="q1" value="Shahada">Bulan pertama dalam kalender Hijriyah
+                     <br>
+                     <input type="radio" name="q1" value="Salat"> Bulan di mana umat Islam berpuasa dari fajar hingga magrib<br>
+                     <input type="radio" name="q1" value="Zakat"> bulan penuh kejahatan<br>
+                     <input type="radio" name="q1" value="Sawm"> bulan biasa<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>2. Berapa kali umat islam beribadah dalam sehari?</p>
+                     <input type="radio" name="q2" value="3"> 3<br>
+                     <input type="radio" name="q2" value="4"> 4<br>
+                     <input type="radio" name="q2" value="5"> 5<br>
+                     <input type="radio" name="q2" value="6"> 6<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>3. Apa kitab suci agama islam?</p>
+                     <input type="radio" name="q3" value="Bible"> Bible<br>
+                     <input type="radio" name="q3" value="Torah"> Torah<br>
+                     <input type="radio" name="q3" value="Quran"> al-Quran<br>
+                     <input type="radio" name="q3" value="Vedas"> Vedas<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>4. Siapa nabi terakhir dalam islam?</p>
+                     <input type="radio" name="q4" value="Moses"> Nuh a.s<br>
+                     <input type="radio" name="q4" value="Jesus"> Jesus a.s<br>
+                     <input type="radio" name="q4" value="Muhammad"> Muhammad Saw<br>
+                     <input type="radio" name="q4" value="Abraham"> Ibrahim a.s<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>5. Apa nama bulan puasa dalam Islam?</p>
+                     <input type="radio" name="q5" value="Ramadan"> Ramadan<br>
+                     <input type="radio" name="q5" value="Shawwal"> Shawwal<br>
+                     <input type="radio" name="q5" value="Dhul-Hijjah"> Dhul-Hijjah<br>
+                     <input type="radio" name="q5" value="Muharram"> Muharram<br>
+                  </div>
+               </div>
+               <div class="card-grid-main">
+                  <div class="quiz-question">
+                     <p>6. Ada berapa surah dalam AL-Quran?</p>
+                     <input type="radio" name="q6" value="114"> 114<br>
+                     <input type="radio" name="q6" value="120"> 120<br>
+                     <input type="radio" name="q6" value="130"> 130<br>
+                     <input type="radio" name="q6" value="140"> 140<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>7. Siapa tuhan umat Muslim?</p>
+                     <input type="radio" name="q7" value="Allah"> Allah<br>
+                     <input type="radio" name="q7" value="Elohim"> Elohim<br>
+                     <input type="radio" name="q7" value="Yahweh"> Yahweh<br>
+                     <input type="radio" name="q7" value="Brahman"> Brahman<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>8.Kearah manakah umat islam menghadap sholat?</p>
+                     <input type="radio" name="q8" value="North">Utara<br>
+                     <input type="radio" name="q8" value="South"> Selatan<br>
+                     <input type="radio" name="q8" value="East"> barat/ menghadap arah ka'bah<br>
+                     <input type="radio" name="q8" value="West"> Timur<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>9. Apa nama ibadah pergi ke mekah?</p>
+                     <input type="radio" name="q9" value="Hajj"> Haji<br>
+                     <input type="radio" name="q9" value="Umrah"> Umrah<br>
+                     <input type="radio" name="q9" value="Ziyarah"> Ziyarah<br>
+                     <input type="radio" name="q9" value="Tawaf"> Tawaf<br>
+                  </div>
+                  <div class="quiz-question">
+                     <p>10. istilah kata sedekah?</p>
+                     <input type="radio" name="q10" value="Sadaqah"> Sadaqah<br>
+                     <input type="radio" name="q10" value="Zakat"> Zakat<br>
+                     <input type="radio" name="q10" value="Kaffarah"> Kaffarah<br>
+                     <input type="radio" name="q10" value="Fidyah"> Fidyah<br>
+                  </div>
+               </div>
+            </div>
+            <button type="submit">Kirim</button>
+         </form>
+         <div id="quiz-result"></div>
+      </div>
+   </main>
+
+   <footer>
+      <div class="footer">
+         <p>&copy; 2025 <span>WEB RAMADHAN</span>. All rights reserved</p>
+      </div>
+   </footer>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="script.js"></script>
+   </body>
+
+</html>

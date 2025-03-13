@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+    background-image: linear-gradient(to right, #287449 20%, #054b35 80%);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+header {
+    padding: 20px ;
+    display: flex;
+    position: absolute;
+    background: transparent;
+    top: 0;
+    justify-content: space-between;
+    margin-right: 70%;
+}
+
+
+.logo {
+    font-size: 25px;
+    height: 50px;
+    font-weight: bold;
+    color: rgb(94, 200, 158);
+    padding-left: 20px;
+
+}
+
+
+.login-btn {
+    background: #157e2f;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 100px;
+    box-shadow: 2px 4px #343935 ;
+}
+
+.login-btn:hover {
+    background-color: #1c5421;
+    box-shadow: 4px 8px rgb(30, 26, 26) ;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+    
+}
+
+.content {
+    width: 80%;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #7fbd8f;
+}
+
+.content p {
+    font-size: larger;
+    margin-bottom: 40px;
+    font: bold;
+    
+}
+
+.image {
+    width: 80%;
+    display: flex;
+    background: transparent;
+    justify-content: flex-end;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+.button {
+    text-align: justify;
+    display: flex;
+    gap:50px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 50px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 7px;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 2px;
+    box-shadow: 2px 4px black ;
+
+}
+
+.btn-ui {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 50px;
+    background-color: white;
+    color: rgb(27, 25, 25);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 7px;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 2px;
+    box-shadow: 2px 4px black ;
+
+}
+
+.btn:hover {
+    background-color: #1c5421;
+    box-shadow: 4px 8px rgb(30, 26, 26) ;
+}
+
+.btn-ui:hover {
+    background-color: #7c7d7c;
+    box-shadow: 4px 8px rgb(30, 26, 26) ;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 60%;
+        text-align: left;
+    }
+
+    .image {
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .button {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .btn, .btn-ui {
+        font-size: 20px;
+        padding: 10px 50px;
+    }
+}

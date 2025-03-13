@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="sholat.css">
+
+   <title>Tabel Ibadah</title>
+   <link rel="icon" href="../gambar/icon.jpg" type="image">
+</head>
+
+<body>
+   <!--=============== HEADER ===============-->
+   <header class="header" id="header">
+      <div class="header__container">
+         <a href="#" class="header__logo">
+            
+         </a>
+
+         <button class="header__toggle" id="header-toggle">
+            <i class="ri-menu-line"></i>
+         </button>
+
+         <div class="header__search">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button"><i class="ri-search-line"></i></button>
+         </div>
+      </div>
+   </header>
+
+   <!--=============== SIDEBAR ===============-->
+   <nav class="sidebar" id="sidebar">
+      <div class="sidebar__container">
+         <div class="sidebar__user">
+            <div class="sidebar__img">
+               <img src="../gambar/profil.jpg" alt="image">
+            </div>
+
+            <div class="sidebar__info">
+               <h3>Guest </h3>
+               <span>Guest@email.com</span>
+            </div>
+         </div>
+
+         <div class="sidebar__content">
+            <div>
+               <h3 class="sidebar__title">MENU</h3>
+
+               <div class="sidebar__list">
+                  <a href="../beranda/index.html" class="sidebar__link active-link">
+                     <i class="ri-home-8-fill"></i>
+                     <span>Beranda</span>
+                  </a>
+
+                  <a href="../tentang/indexaboutt.html" class="sidebar__link">
+                     <i class="ri-global-fill"></i>
+                     <span>Tentang</span>
+                  </a>
+
+                  <a href="../kalender/indexkalender.html" class="sidebar__link">
+                     <i class="ri-calendar-fill"></i>
+                     <span>Kalender</span>
+                  </a>
+
+
+                  <a href="../jadwal imsak/jadwal imsak.html" class="sidebar__link">
+                     <i class="ri-time-line"></i>
+                     <span>Jadwal Imsak</span>
+                  </a>
+
+               </div>
+            </div>
+
+
+         <div class="sidebar__actions">
+            <button>
+               <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
+                  <span>Tema</span>
+               </i>
+            </button>
+         
+            <a href="../index.html">
+               <button class="sidebar__link">
+                  <i class="ri-logout-box-r-fill"></i>
+                  <span>Keluar</span>
+               </button>
+            </a>
+         </div>
+      </div>
+   </nav>
+
+   <!--=============== MAIN ===============-->
+   <main class="main container" id="main">
+    <header class="header-bg">
+        <div class="header-content">
+            <h1>WEB RAMADHAN</h1>
+            <p>Ayo Semangat Ibadahnya</p>
+        </div>
+    </header>
+    <br>
+    <br>
+      <h1 class="hdr">Sidebar Menu</h1>
+      <div class="container-grid">
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../ibadah/sholat.html"><img src="../gambar/ibadah.jpg">Ibadah</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../doa puasa/indexdoa.html"><img src="../gambar/doa.png">Doa</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../motivasi/indexmotivasi.html"><img src="../gambar/motivasi.png">Motivasi</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../quiz/indexquiz.html"><img src="../gambar/quiz.jpg">Quiz</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../article/card.html"><img src="../gambar/jadwal imsak.png">blog</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href="../kisah nabi/kisahnabi.html"><img src="../gambar/cerita nabi.png">Cerita Nabi</a>
+            </div>
+         </div>
+      </div>
+    <!-- <br>
+      <h1 class="barmenu">Sidebar Menu</h1>
+      <div class="container-grid">
+         <div class="card-grid">
+            <div class="card_header">
+               <a href=""><img src="contoh.jpg">Ibadah</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href=""><img src="contoh.jpg">Doa</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href=""><img src="contoh.jpg">Quiz</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href=""><img src="contoh.jpg">Motivasi</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href=""><img src="contoh.jpg">Blog</a>
+            </div>
+         </div>
+         <div class="card-grid">
+            <div class="card_header">
+               <a href=""><img src="contoh.jpg">Cerita Nabi</a>
+            </div>
+         </div>
+      </div> -->
+      <h2 class="day-grid-title">Jurnal Harian Puasa Ramadhan 2025</h2> 
+      <p class="Grid-p">Ayo sholat yang yang rajin </p>
+      <div class="day-grid" id="day-grid">
+         <!-- Day buttons will be generated here -->
+      </div>
+     
+        
+         <div id="prayer-form" class="form-container" style="display:none;">
+            <h2>Form Pengisian Sholat 5 Waktu</h2>
+            <form id="form" onsubmit="handleSubmit(event)">
+
+               <div class="form-group">
+                  <label class="container"></label>
+                  <label for="day">Hari:</label>
+                  <input type="text" id="day" name="day" readonly>
+               </div>
+               <div class="form-group">
+                  <label for="puasa">Puasa:</label>
+                  <input type="checkbox" id="puasa" name="puasa">
+               </div>
+               <div class="form-group">
+                  <label for="tadarus">Tadarus AL-Quran:</label>
+                  <input type="checkbox" id="tadarus" name="tadarus">
+               </div>
+               <div class="form-group">
+                  <label for="fajr">Sholat Subuh:</label>
+                  <input type="checkbox" id="fajr" name="fajr">
+               </div>
+               <div class="form-group">
+                  <label for="dhuhr">Sholat Dzuhur:</label>
+                  <input type="checkbox" id="dhuhr" name="dhuhr">
+               </div>
+               <div class="form-group">
+                  <label for="asr">Sholat Ashar:</label>
+                  <input type="checkbox" id="asr" name="asr">
+               </div>
+               <div class="form-group">
+                  <label for="maghrib">Sholat Maghrib:</label>
+                  <input type="checkbox" id="maghrib" name="maghrib">
+               </div>
+               <div class="form-group">
+                  <label for="isha">Sholat Isya:</label>
+                  <input type="checkbox" id="isha" name="isha">
+               </div>
+               <div class="form-group">
+                  <label for="photo">Upload Gambar:</label>
+                  <input type="file" id="photo" name="photo">
+               </div>
+               <div class="form-buttons">
+                  <button type="submit" class="btn-grad">Kirim</button>
+                  <button type="button" onclick="closeForm()" class="btn-grad">Tutup</button>
+               </div>
+            </form>
+         </div>
+         <div id="rekap-container" style="display:none;">
+            <h2>Rekap Ibadah</h2>
+            <table id="rekap-table" border="1">
+               <tbody>
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Puasa</th>
+                        <th>Tadarus AL-Quran</th>
+                        <th>Sholat Subuh</th>
+                        <th>Sholat Dzuhur</th>
+                        <th>Sholat Ashar</th>
+                        <th>Sholat Maghrib</th>
+                        <th>Sholat Isya</th>
+                        <th>Gambar</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      
+      <footer class="footer">
+         <p>&copy; 2025 <span>Ramadhan Day</span>. All right reserved</p>  
+      </footer>
+   </main>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="sholat.js"></script>
+   <script>
+      
+   </script>
+</body>
+
+</html>

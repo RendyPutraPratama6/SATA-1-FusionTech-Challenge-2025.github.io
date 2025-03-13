@@ -1,0 +1,148 @@
+body {
+  background: url("bg-01.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+}
+.header {
+  background: linear-gradient(to bottom, #38b2ac, #319795);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.register-form {
+  padding: 20px;
+}
+.register-form h2 {
+  text-align: center;
+  color: #4a5568;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #edf2f7;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.input-group i {
+  color: #a0aec0;
+  margin-right: 10px;
+}
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+}
+.register-button {
+  width: 100%;
+  background: #319795;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.register-button:hover {
+  background: #2c7a7b;
+}
+.extra-links {
+  text-align: center;
+  margin-top: 15px;
+}
+.extra-links a {
+  color: #319795;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px;
+  display: inline-block;
+}
+.extra-links a:hover {
+  text-decoration: underline;
+}
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.image-container img {
+  width: 105%;
+  height: auto;
+  display: block;
+  margin-left: -2%;
+}
+.image-container .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .register-form h2 {
+    font-size: 18px;
+  }
+  .image-container img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .image-container .overlay-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 15px;
+  }
+  .header h1 {
+    font-size: 18px;
+  }
+  .register-form h2 {
+    font-size: 16px;
+  }
+  .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .input-group i {
+    margin-bottom: 5px;
+  }
+  .register-button {
+    padding: 8px;
+  }
+  .image-container .overlay-text {
+    font-size: 20px;
+  }
+}

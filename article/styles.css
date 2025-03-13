@@ -1,0 +1,196 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    background-color: #d4edda;
+    color: #155724;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);  
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .tag {
+    display: inline-block;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.header .date {
+    display: inline-block;
+    margin-left: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.main-image {
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.image {
+    text-align: center;
+    font-size: 15px;
+    color: #777
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+/* article 3*/
+.content blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    padding: 10px;
+    font-style: italic;
+}
+
+.content hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* article 2 */
+.content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.content ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.content ol li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.content .tips {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.content .tips h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.content .benefits {
+    background-color: #e9f7e9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.content .benefits h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .back-to-home {
+        top: 10px;
+        left: 10px;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Responsif untuk layar sangat kecil (HP kecil) */
+@media (max-width: 480px) {
+    .back-to-home {
+        top: 8px;
+        left: 8px;
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadhan Day</title>
+    <link rel="icon" href="../gambar/icon.jpg" type="image">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Ramadan Day</title>
+        <link rel="icon" href="gambar/icon.jpg" type="image">
+    </head>
+
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <div class="header__container">
+                <a href="#" class="header__logo">
+
+                </a>
+
+                <button class="header__toggle" id="header-toggle">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+
+            </div>
+        </header>
+
+        <!--=============== SIDEBAR ===============-->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar__container">
+                <div class="sidebar__user">
+                    <div class="sidebar__img">
+                        <img src="../gambar/profil.jpg" alt="image">
+                    </div>
+
+                    <div class="sidebar__info">
+                        <h3>Guest </h3>
+                        <span>Guest@email.com</span>
+                     </div>
+                </div>
+
+                <div class="sidebar__content">
+                    <div>
+                        <h3 class="sidebar__title">MENU</h3>
+
+                        <div class="sidebar__list">
+                            <a href="../beranda/index.html" class="sidebar__link active-link">
+                                <i class="ri-home-8-fill"></i>
+                                <span>Beranda</span>
+                            </a>
+
+                            <a href="../tentang/indexaboutt.html" class="sidebar__link">
+                                <i class="ri-global-fill"></i>
+                                <span>Tentang</span>
+                            </a>
+
+                            <a href="../kalender/indexkalender.html" class="sidebar__link">
+                                <i class="ri-calendar-fill"></i>
+                                <span>Kalender</span>
+                            </a>
+
+
+                            <a href="../jadwal imsak/jadwal imsak.html" class="sidebar__link">
+                                <i class="ri-time-line"></i>
+                                <span>Jadwal Imsak</span>
+                             </a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="sidebar__actions">
+                        <button>
+                            <i class="ri-moon-clear-fill sidebar__link sidebar__theme" id="theme-button">
+                                <span>Tema</span>
+                            </i>
+                        </button>
+
+                        <a href="../index.html">
+                            <button class="sidebar__link">
+                               <i class="ri-logout-box-r-fill"></i>
+                               <span>Keluar</span>
+                            </button>
+                         </a>
+                    </div>
+                </div>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="main container" id="main">
+            <header class="header-bg">
+                <div class="header-content">
+                    <h1 class="judul">WEB RAMADHAN</h1>
+                    <p>Ayo Semangat Ibadahnya</p>
+                </div>
+            </header>
+            <br>
+            <h1 class="hdr">Sidebar Menu</h1>
+            <div class="container-grid">
+                <div class="card-grid">
+                    <div class="card_header">
+                        <a href="../ibadah/sholat.html"><img src="../gambar/ibadah.jpg">Ibadah</a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card_header">
+                        <a href="../doa puasa/indexdoa.html"><img src="../gambar/doa.png">Doa</a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card_header">
+                        <a href="../motivasi/indexmotivasi.html"><img src="../gambar/motivasi.png">Motivasi</a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card_header">
+                        <a href="../quiz/indexquiz.html"><img src="../gambar/quiz.jpg">Quiz</a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card_header">
+                        <a href="../article/card.html"><img src="../gambar/jadwal imsak.png">blog</a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card_header">
+                        <a href="../kisah nabi/kisahnabi.html"><img src="../gambar/cerita nabi.png">Cerita Nabi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="light">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <span class="month-picker" id="month-picker">February</span>
+                            <div class="year-picker">
+                                <span class="year-change" id="prev-year">
+                                    <pre><</pre>
+                                </span>
+                                <span id="year">2021</span>
+                                <span class="year-change" id="next-year">
+                                    <pre>></pre>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-week-day">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-days"></div>
+                        </div>
+                        <div class="month-list"></div>
+                    </div>
+                    <script src="app.js"></script>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <p>&copy; 2025 <span>Ramadhan Day</span> All Right Reserved.By four Dragon</p>
+                </div>
+            </footer>
+        </main>
+        <!--=============== MAIN JS ===============-->
+        <script src="../beranda/script.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>

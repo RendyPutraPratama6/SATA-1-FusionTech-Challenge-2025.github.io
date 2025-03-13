@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="2831306.png"
+          alt="Illustration of a serene landscape with mountains, trees, and a moon in a green gradient background"
+        />
+        <div class="overlay-text">Web Ramadhan</div>
+      </div>
+      <div class="register-form" id="login-form">
+        <h2>LOGIN</h2>
+        <form action="../beranda/index.html"> <!-- klik login -->
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" placeholder="Username" required />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit" class="register-button">Login</button>
+        </form>
+        <p id="error-message"></p>
+        <div class="extra-links">
+          <a href="daftar.html">Daftar</a> |
+          <a href="forgot-password.html">Lupa Password?</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
